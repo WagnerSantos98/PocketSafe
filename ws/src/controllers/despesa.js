@@ -13,7 +13,7 @@ exports.addDespesa = async (req, res) => {
 
     try{
         //Validação
-        if(!titulo || !quantia || !categoria || !descricao || !data){
+        if(!titulo || !categoria || !descricao || !data){
             return res.status(400).json({msg: 'Todos os campos são obrigatórios'});
         }
         if(quantia <= 0 || !quantia === 'number'){
