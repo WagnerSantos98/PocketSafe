@@ -29,7 +29,7 @@ exports.addRenda = async (req, res) => {
 
 exports.getRendimentos = async (req, res) => {
     try{   
-        const rendimentos = await  RendaSchemaSchema.find().sort({ createdAt: -1 })
+        const rendimentos = await  RendaSchema.find().sort({createdAt: -1})
         res.status(200).json(rendimentos);
     }catch(error){
         res.status(500).json({msg: 'Falha ao buscar renda'});
@@ -39,7 +39,7 @@ exports.getRendimentos = async (req, res) => {
 exports.deleteRenda = async (req, res) => {
     try{
         const {id} = req.params;
-        RendaSchemaSchema.findByIdAndDelete(id)
+        RendaSchema.findByIdAndDelete(id)
             .then((renda) => {
                 res.status(200).json({msg: 'Renda excluída com sucesso'});
             })
