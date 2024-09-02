@@ -77,4 +77,4 @@ const ChartStyled = styled.div`
     height: 100%;
 `;
 
-export default Chart
+export default Chart;

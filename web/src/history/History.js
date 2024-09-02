@@ -5,26 +5,26 @@ import { useGlobalContext } from '../context/globalContext';
 function History() {
     const {historicoTransacoes} = useGlobalContext()
 
-    const [...historico] = transactionHistory()
+    const [...historico] = historicoTransacoes()
 
     return (
         <HistoryStyled>
-            <h2>Recent History</h2>
+            <h2>Histório Recente</h2>
             {historico.map((item) =>{
                 const {_id, titulo, quantia, tipo} = item
                 return (
                     <div key={_id} className="history-item">
                         <p style={{
-                            color: tipo === 'expense' ? 'red' : 'var(--color-green)'
+                            color: tipo === 'despesa' ? 'red' : 'var(--color-green)'
                         }}>
                             {titulo}
                         </p>
 
                         <p style={{
-                            color: tipo === 'expense' ? 'red' : 'var(--color-green)'
+                            color: tipo === 'despesa' ? 'red' : 'var(--color-green)'
                         }}>
                             {
-                                tipo === 'expense' ? `-${quantia <= 0 ? 0 : quantia}` : `+${quantia <= 0 ? 0: quantia}`
+                                tipo === 'despesa' ? `-${quantia <= 0 ? 0 : quantia}` : `+${quantia <= 0 ? 0: quantia}`
                             }
                         </p>
                     </div>

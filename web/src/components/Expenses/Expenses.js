@@ -75,4 +75,4 @@ const ExpenseStyled = styled.div`
     }
 `;
 
-export default Expenses
+export default Expenses;

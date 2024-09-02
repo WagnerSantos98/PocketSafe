@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import { useGlobalContext } from '../../context/globalContext';
-import History from '../../History/History';
+import History from '../../history/History';
 import { InnerLayout } from '../../assets/styles/Layouts';
 import { dollar } from '../../utils/Icons';
 import Chart from '../Chart/Chart';
@@ -10,14 +10,14 @@ function Dashboard() {
     const {totalDespesas,rendimentos, despesas, totalRenda, saldoTotal, getRendimentos, getDespesas } = useGlobalContext()
 
     useEffect(() => {
-        getIncomes()
-        getExpenses()
+        getRendimentos()
+        getDespesas()
     }, [])
 
     return (
         <DashboardStyled>
             <InnerLayout>
-                <h1>All Transactions</h1>
+                <h1>Todas as Transações</h1>
                 <div className="stats-con">
                     <div className="chart-con">
                         <Chart />
@@ -44,7 +44,7 @@ function Dashboard() {
                     </div>
                     <div className="history-con">
                         <History />
-                        <h2 className="salary-title">Min <span>Salary</span>Max</h2>
+                        <h2 className="salary-title">Min <span>Salário</span>Max</h2>
                         <div className="salary-item">
                             <p>
                                 ${Math.min(...rendimentos.map(item => item.quantia))}
@@ -53,7 +53,7 @@ function Dashboard() {
                                 ${Math.max(...rendimentos.map(item => item.quantia))}
                             </p>
                         </div>
-                        <h2 className="salary-title">Min <span>Expense</span>Max</h2>
+                        <h2 className="salary-title">Min <span>Despesa</span>Max</h2>
                         <div className="salary-item">
                             <p>
                                 ${Math.min(...despesas.map(item => item.quantia))}
@@ -144,4 +144,4 @@ const DashboardStyled = styled.div`
     }
 `;
 
-export default Dashboard
+export default Dashboard;
