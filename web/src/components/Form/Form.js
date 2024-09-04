@@ -8,7 +8,7 @@ import { plus } from '../../utils/Icons';
 
 
 function Form() {
-    const {addRenda, getRendimentos, error, setError} = useGlobalContext()
+    const {addRenda, error, setError} = useGlobalContext()
     const [inputState, setInputState] = useState({
         titulo: '',
         quantia: '',
@@ -17,7 +17,7 @@ function Form() {
         descricao: '',
     })
 
-    const { titulo, quantia, data, categoria,descricao } = inputState;
+    const { titulo, quantia, data, categoria, descricao } = inputState;
 
     const handleInput = name => e => {
         setInputState({...inputState, [name]: e.target.value})
@@ -44,7 +44,7 @@ function Form() {
                     type="text" 
                     value={titulo}
                     name={'titulo'} 
-                    placeholder="Salary titulo"
+                    placeholder="Título"
                     onChange={handleInput('titulo')}
                 />
             </div>
@@ -52,14 +52,14 @@ function Form() {
                 <input value={quantia}  
                     type="text" 
                     name={'quantia'} 
-                    placeholder={'Salary quantia'}
+                    placeholder={'Quantia'}
                     onChange={handleInput('quantia')} 
                 />
             </div>
             <div className="input-control">
                 <DatePicker 
                     id='date'
-                    placeholderText='Enter A Date'
+                    placeholderText='Insira uma data'
                     selected={data}
                     dateFormat="dd/MM/yyyy"
                     onChange={(data) => {
@@ -69,7 +69,7 @@ function Form() {
             </div>
             <div className="selects input-control">
                 <select required value={categoria} name="categoria" id="categoria" onChange={handleInput('categoria')}>
-                    <option value=""  disabled >Select Option</option>
+                    <option value=""  disabled >Selecione uma opção</option>
                     <option value="salary">Salary</option>
                     <option value="freelancing">Freelancing</option>
                     <option value="investments">Investiments</option>
@@ -81,11 +81,11 @@ function Form() {
                 </select>
             </div>
             <div className="input-control">
-                <textarea name="descricao" value={descricao} placeholder='Add A Reference' id="descricao" cols="30" rows="4" onChange={handleInput('descricao')}></textarea>
+                <textarea name="descricao" value={descricao} placeholder='Adicione uma observação' id="descricao" cols="30" rows="4" onChange={handleInput('descricao')}></textarea>
             </div>
             <div className="submit-btn">
                 <Button 
-                    name={'Add Income'}
+                    name={'Adicionar Renda'}
                     icon={plus}
                     bPad={'.8rem 1.6rem'}
                     bRad={'30px'}

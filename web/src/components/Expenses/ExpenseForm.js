@@ -10,14 +10,14 @@ import { plus } from '../../utils/Icons';
 function ExpenseForm() {
     const {addDespesa, error, setError} = useGlobalContext()
     const [inputState, setInputState] = useState({
-       titulo: '',
+        titulo: '',
         quantia: '',
         data: '',
         categoria: '',
         descricao: '',
     })
 
-    const {titulo, quantia, data, categoria,descricao } = inputState;
+    const {titulo, quantia, data, categoria, descricao } = inputState;
 
     const handleInput = name => e => {
         setInputState({...inputState, [name]: e.target.value})
@@ -28,7 +28,7 @@ function ExpenseForm() {
         e.preventDefault()
         addDespesa(inputState)
         setInputState({
-           titulo: '',
+            titulo: '',
             quantia: '',
             data: '',
             categoria: '',
@@ -44,7 +44,7 @@ function ExpenseForm() {
                     type="text" 
                     value={titulo}
                     name={'titulo'} 
-                    placeholder="Expense Titulo"
+                    placeholder="Título"
                     onChange={handleInput('titulo')}
                 />
             </div>
@@ -52,14 +52,14 @@ function ExpenseForm() {
                 <input value={quantia}  
                     type="text" 
                     name={'quantia'} 
-                    placeholder={'Expense Quantia'}
+                    placeholder={'Quantia'}
                     onChange={handleInput('quantia')} 
                 />
             </div>
             <div className="input-control">
                 <DatePicker 
                     id='date'
-                    placeholderText='Enter A Date'
+                    placeholderText='Insira uma data'
                     selected={data}
                     dateFormat="dd/MM/yyyy"
                     onChange={(data) => {
@@ -69,7 +69,7 @@ function ExpenseForm() {
             </div>
             <div className="selects input-control">
                 <select required value={categoria} name="categoria" id="categoria" onChange={handleInput('categoria')}>
-                    <option value="" disabled >Select Option</option>
+                    <option value="" disabled >Selecione uma opção</option>
                     <option value="education">Education</option>
                     <option value="groceries">Groceries</option>
                     <option value="health">Health</option>
@@ -81,11 +81,11 @@ function ExpenseForm() {
                 </select>
             </div>
             <div className="input-control">
-                <textarea name="descricao" value={descricao} placeholder='Add A Reference' id="descricao" cols="30" rows="4" onChange={handleInput('descricao')}></textarea>
+                <textarea name="descricao" value={descricao} placeholder='Adicione uma observação' id="descricao" cols="30" rows="4" onChange={handleInput('descricao')}></textarea>
             </div>
             <div className="submit-btn">
                 <Button 
-                    name={'Add Expense'}
+                    name={'Adicionar Despesa'}
                     icon={plus}
                     bPad={'.8rem 1.6rem'}
                     bRad={'30px'}

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { useGlobalContext } from '../../context/globalContext';
 import History from '../../history/History';
 import { InnerLayout } from '../../assets/styles/Layouts';
-import { dollar } from '../../utils/Icons';
+import { real } from '../../utils/Icons';
 import Chart from '../Chart/Chart';
 
 function Dashboard() {
@@ -25,19 +25,19 @@ function Dashboard() {
                             <div className="income">
                                 <h2>Renda Total</h2>
                                 <p>
-                                    {dollar} {totalRenda()}
+                                    {real} {totalRenda()}
                                 </p>
                             </div>
                             <div className="expense">
                                 <h2>Total de Despesas</h2>
                                 <p>
-                                    {dollar} {totalDespesas()}
+                                    {real} {totalDespesas()}
                                 </p>
                             </div>
                             <div className="balance">
-                                <h2>Saldo Total</h2>
+                                <h2>Saldo Atual</h2>
                                 <p>
-                                    {dollar} {saldoTotal()}
+                                    {real} {saldoTotal()}
                                 </p>
                             </div>
                         </div>
@@ -47,19 +47,19 @@ function Dashboard() {
                         <h2 className="salary-title">Min <span>Salário</span>Max</h2>
                         <div className="salary-item">
                             <p>
-                                ${Math.min(...rendimentos.map(item => item.quantia))}
+                                R${Math.min(...rendimentos.map(item => item.quantia))}
                             </p>
                             <p>
-                                ${Math.max(...rendimentos.map(item => item.quantia))}
+                                R${Math.max(...rendimentos.map(item => item.quantia))}
                             </p>
                         </div>
                         <h2 className="salary-title">Min <span>Despesa</span>Max</h2>
                         <div className="salary-item">
                             <p>
-                                ${Math.min(...despesas.map(item => item.quantia))}
+                                R${Math.min(...despesas.map(item => item.quantia))}
                             </p>
                             <p>
-                                ${Math.max(...despesas.map(item => item.quantia))}
+                                R${Math.max(...despesas.map(item => item.quantia))}
                             </p>
                         </div>
                     </div>

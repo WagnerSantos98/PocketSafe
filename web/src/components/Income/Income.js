@@ -15,7 +15,7 @@ function Income() {
         <IncomeStyled>
             <InnerLayout>
                 <h1>Rendimentos</h1>
-                <h2 className="total-income">Renda Total: <span>${totalRenda()}</span></h2>
+                <h2 className="total-income">Renda Total: <span>R${totalRenda()}</span></h2>
                 <div className="income-content">
                     <div className="form-container">
                         <Form />
