@@ -4,6 +4,17 @@
 
 O Sistena de Gestão Financeira é uma aplicação web desenvolvida para facilitar o gerenciamento de entrada e saída de valores.
 
+## 📋 <a name="table">Índice</a>
+
+1. 🤖 [Introduction](#introduction)
+2. ⚙️ [Tech Stack](#tech-stack)
+3. 🔋 [Features](#features)
+4. 🤸 [Quick Start](#quick-start)
+5. 🕸️ [Code Snippets to Copy](#snippets)
+6. 🔗 [Assets](#links)
+7. 🚀 [More](#more)
+
+## <a name="tech-stack">⚙️ Tech Stack</a>
 ## Tecnologias Utilizadas
 
 - **Front-end**: React.js
@@ -14,49 +25,19 @@ O Sistena de Gestão Financeira é uma aplicação web desenvolvida para facilit
 
 ## Funcionalidades
 
-1. **Gestão de Veículos**
-    - Cadastro e edição de veículos.
-    - Monitoramento do status de manutenção.
 
-2. **Gestão de Motorista**
-    - Cadastro e edição de motoristas.
-    - Gestão da disponibilidade e histórico de viagens.
 
-3. **Gestão de Rotas e Entregas**
-    - Planejamento e otimização de rotas.
-    - Atribuição de entregas a motoristas.
-    - Rastreamento de entregas em tempo real.
+**Prerequisites**
 
-4. **Manutenção de Veículos**
-    - Agendamento de manutenções.
-    - Registro de histórico de manutenções.
+Certifique-se de ter o seguinte instalado em sua máquina:
 
-5. **Gestão de Combustível**
-    - Registro de abastecimentos.
-    - Monitoramento do consumo de combustível.
-
-6. **Relatórios e Análises**
-    - Relatórios de desempenho de motoristas e veículos.
-    - Relatórios de eficiência de rotas e entregas.
-
-7. **notificações e Alertas**
-    - Alertas sobre manutenções programadas.
-    - Notificações sobre status de entregas.
-
-8. **Autenticação e Controle de Acesso**
-    - Registro e login de usuários.
-    - Controle de acesso baseado em funções (administradores, motoristas, operadores).
-
-## Requisitos de Instalção
-
-- Node.js (versão 14 ou superior)
-- MongoDB
-- Docker (opcional, para deploy)
-- Git 
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/pt)
+- [npm](https://www.npmjs.com/) (Node Package Manager)
 
 ## Configurações do Ambiente de Desenvolvimento
 
-1. **Clone o repositório:**
+**Clone o repositório:**
 ```bash
 git clone https://github.com/WagnerSantos98/TrackWise.git
 cd TrackWise
@@ -72,10 +53,18 @@ npm install
 
 2. **Configure as variáveis de ambiente:**
 
+Crie um novo arquivo chamado `.env` na raiz do seu projeto e adicione o seguinte conteúdo:
 
-## Endpoints da API
+```env
+PORT=
+MONGO_URL=
+```
 
+**Executando o Projeto**
 
+```bash
+npm run dev
+```
 
 ## Contato
 
