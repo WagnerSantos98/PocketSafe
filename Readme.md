@@ -62,45 +62,20 @@ git clone https://github.com/WagnerSantos98/TrackWise.git
 cd TrackWise
 ```
 
+**Instalação**
+
+Instale as dependências do projeto usando npm:
+
+```bash
+npm install
+```
+
 2. **Configure as variáveis de ambiente:**
 
-**Inicie o servidor back-end:**
-```bash
-cd server
-npm start
-```
-
-**Inicie o servidor front-end:**
-```bash
-cd web
-npm start
-```
 
 ## Endpoints da API
 
-**Veículos**
-- GET `/veiculos` - Lista todos os veículos
-- POST `/veiculos` - Criar um novo veículo
-- PUT `/veiculos/:id` - Atualiza um veículo extistente
-- DELETE `/veiculos/:id` - Remove um veículo
 
-**Motoristas**
-- GET `/motoristas` - Lista todos os motoristas
-- POST `/motoristas` - Criar um novo motorista
-- PUT `/motoristas/:id` - Atualiza um motorista extistente
-- DELETE `/motoristas/:id` - Remove um motorista
-
-**Rotas**
-- GET `/rotas` - Lista todos os rotas
-- POST `/rotas` - Criar um novo rota
-- PUT `/rotas/:id` - Atualiza um rota extistente
-- DELETE `/rotas/:id` - Remove um rota
-
-**Entregas**
-- GET `/entregas` - Lista todos os entregas
-- POST `/entregas` - Criar um novo entrega
-- PUT `/entregas/:id` - Atualiza um entrega extistente
-- DELETE `/entregas/:id` - Remove um entrega
 
 ## Contato
 
