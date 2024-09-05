@@ -68,7 +68,7 @@ npm install
 
 2. **Configure as variáveis de ambiente:**
 
-Crie um novo arquivo chamado `.env` na raiz na pasta ws em sua raiz e adicione o seguinte conteúdo:
+Crie um novo arquivo chamado `.env` na raiz na pasta **ws** e adicione o seguinte conteúdo:
 
 ```env
 PORT=
