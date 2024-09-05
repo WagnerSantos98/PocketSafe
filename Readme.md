@@ -7,15 +7,14 @@ O Sistena de Gestão Financeira é uma aplicação web desenvolvida para facilit
 ## 📋 <a name="table">Índice</a>
 
 1. 🤖 [Introduction](#introduction)
-2. ⚙️ [Tech Stack](#tech-stack)
+2. ⚙️ [Tecnologias Utilizadas](#tech-stack)
 3. 🔋 [Features](#features)
 4. 🤸 [Quick Start](#quick-start)
 5. 🕸️ [Code Snippets to Copy](#snippets)
 6. 🔗 [Assets](#links)
 7. 🚀 [More](#more)
 
-## <a name="tech-stack">⚙️ Tech Stack</a>
-## Tecnologias Utilizadas
+## <a name="tecnologia-utilizadas">⚙️ Tecnologias Utilizadas</a>
 
 - **Front-end**: React.js
 - **Back-end**: Node.js com Express
