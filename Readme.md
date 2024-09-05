@@ -70,7 +70,7 @@ MONGO_URL=
 npm start || npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
+Abra [http://localhost:3000](http://localhost:3000) no seu navegador para visualizar o projeto.
 
 ## <a name="contact">📣 Contato</a>
 
