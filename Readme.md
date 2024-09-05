@@ -27,15 +27,15 @@ Construído com React.js, Pocket Safe é uma plataforma financeira SaaS que se c
 
 ## <a name="features">💼 Funcionalidades</a>
 
-💼 Página inicial: mostra uma visão geral da conta do usuário com saldo atual, transações recentes, dinheiro gasto em diferentes categorias, etc.
+💼 **Página inicial**: mostra uma visão geral da conta do usuário com saldo atual, transações recentes, dinheiro gasto em diferentes categorias, etc.
 
-💼 Histórico de transações: inclui opções de paginação e filtragem para visualizar o histórico de transações de diferentes bancos
+💼 **Histórico de transações**: inclui opções de paginação e filtragem para visualizar o histórico de transações de diferentes bancos
 
-💼 Atualizações em tempo real: refletem as alterações em todas as páginas relevantes ao conectar novas contas bancárias.
+💼 **Atualizações em tempo real**: refletem as alterações em todas as páginas relevantes ao conectar novas contas bancárias.
 
-💼 Transferência de fundos: permite aos usuários transferir fundos usando Dwolla para outras contas com campos obrigatórios e ID do banco destinatário.
+💼 **Transferência de fundos**: permite aos usuários transferir fundos usando Dwolla para outras contas com campos obrigatórios e ID do banco destinatário.
 
-💼 Capacidade de resposta: garante que o aplicativo se adapte perfeitamente a vários tamanhos de tela e dispositivos, proporcionando uma experiência de usuário consistente em plataformas de desktop, tablet e dispositivos móveis.
+💼 **Capacidade de resposta**: garante que o aplicativo se adapte perfeitamente a vários tamanhos de tela e dispositivos, proporcionando uma experiência de usuário consistente em plataformas de desktop, tablet e dispositivos móveis.
 
 e muito mais, incluindo arquitetura de código e capacidade de reutilização.
 
