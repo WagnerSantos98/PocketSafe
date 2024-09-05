@@ -6,7 +6,7 @@ O Sistena de Gestão Financeira é uma aplicação web desenvolvida para facilit
 
 ## 📋 <a name="table">Índice</a>
 
-1.  ℹ️ [Introdução](#introduction)
+1.  ℹ️  [Introdução](#introduction)
 2. ⚙️ [Tecnologias Utilizadas](#tech-utility)
 3. 🔋 [Features](#features)
 4. 🚀 [Quick Start](#quick-start)
