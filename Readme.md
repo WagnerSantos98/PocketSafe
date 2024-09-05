@@ -12,6 +12,10 @@ O Sistena de Gestão Financeira é uma aplicação web desenvolvida para facilit
 4. 🚀 [Quick Start](#quick-start)
 7. 📣 [Contato](#contact)
 
+## <a name="introduction">ℹ️ Introdução</a>
+
+Construído com React.js, Pocket Safe é uma plataforma financeira SaaS que se conecta a várias contas bancárias, exibe transações em tempo real, permite aos usuários transferir dinheiro para outros usuários da plataforma e gerencia suas finanças como um todo.
+
 ## <a name="tech-utility">⚙️ Tecnologias Utilizadas</a>
 
 - **Front-end**: React.js
@@ -20,9 +24,6 @@ O Sistena de Gestão Financeira é uma aplicação web desenvolvida para facilit
 - **Autenticação**: JSON Web Tokens (JWT) e Auth
 - **Outras Ferramentas**: Git, Github
 
-## <a name="introduction">ℹ️ Introdução</a>
-
-Construído com React.js, Pocket Safe é uma plataforma financeira SaaS que se conecta a várias contas bancárias, exibe transações em tempo real, permite aos usuários transferir dinheiro para outros usuários da plataforma e gerencia suas finanças como um todo.
 
 
 ## Funcionalidades
