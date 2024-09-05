@@ -12,7 +12,7 @@ O Sistena de Gestão Financeira é uma aplicação web desenvolvida para facilit
 4. 🚀 [Quick Start](#quick-start)
 5. 🕸️ [Code Snippets to Copy](#snippets)
 6. 🔗 [Assets](#links)
-7. 🚀 [More](#more)
+7. 📣 [Contato](#contact)
 
 ## <a name="tech-utility">⚙️ Tecnologias Utilizadas</a>
 
@@ -66,7 +66,7 @@ MONGO_URL=
 npm run dev
 ```
 
-## Contato
+## <a name="contact">📣 Contato</a>
 
 - Autor: Wagner Santos de Jesus
 - Email: wagner.jesus98@outlook.com
